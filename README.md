@@ -1,19 +1,21 @@
-🦾 Wireless Gesture Controlled 4-DOF Robotic Arm
+Wireless Gesture Controlled 4-DOF Robotic Arm
+
 📌 Overview
 
 This project enables real-time wireless control of a 4-DOF robotic arm using hand gesture tracking.
 
 The system uses:
 
-🖐️ MediaPipe Hand Tracking on PC
+- MediaPipe Hand Tracking on PC
 
-📡 TCP Wireless Communication
+- TCP Wireless Communication
 
-🍓 Raspberry Pi GPIO Servo Control
+- Raspberry Pi GPIO Servo Control
 
-⚙️ Direct GPIO-based PWM control (No external driver)
+- Direct GPIO-based PWM control (No external driver)
 
 Hand movement is captured on a PC camera and transmitted wirelessly to a Raspberry Pi, which replicates the motion on a 4-DOF robotic arm.
+
 
 🏗 System Architecture
 
@@ -24,31 +26,35 @@ PC (Gesture Detection)
 → GPIO PWM
 → 4 DOF Servo Arm
 
+
 🔧 Hardware Used
 
-🍓 Raspberry Pi 4B
+- Raspberry Pi 4B
 
-4x Servo Motors
+- 4x Servo Motors
 
-External 5V Power Supply
+- External 5V Power Supply
 
-Jumper Wires
+- Jumper Wires
 
-4-DOF Robotic Arm
+- 4-DOF Robotic Arm
+
 
 🧠 Software Stack
 
-Python 3.9+
+- Python 3.9+
 
-OpenCV
+- OpenCV
 
-MediaPipe
+- MediaPipe
 
-Socket Programming
+- Socket Programming
 
-RPi.GPIO
+- RPi.GPIO
+
 
 🚀 Setup Instructions
+
 1️⃣ Clone Repository
 git clone https://github.com/yourusername/wireless-gesture-robotic-arm.git
 cd wireless-gesture-robotic-arm
@@ -69,23 +75,23 @@ python arm_receiver.py
 
 This project demonstrates:
 
-Low-latency gesture-to-actuator mapping
+- Low-latency gesture-to-actuator mapping
 
-Real-time wireless robotic control
+- Real-time wireless robotic control
 
-Direct GPIO servo PWM without external driver
+- Direct GPIO servo PWM without external driver
 
-Practical implementation of computer vision in robotics
+- Practical implementation of computer vision in robotics
 
 
 📈 Future Improvements
 
-Add Kalman filtering for smoother motion
+- Add Kalman filtering for smoother motion
 
-Replace GPIO PWM with hardware PWM (pigpio)
+- Replace GPIO PWM with hardware PWM (pigpio)
 
-Add inverse kinematics layer
+- Add inverse kinematics layer
 
-Add force feedback
+- Add force feedback
 
-Convert to ROS2 architecture
+- Convert to ROS2 architecture
